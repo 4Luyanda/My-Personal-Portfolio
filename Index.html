@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luyanda Mqadi - Portfolio</title>
+    <meta name="description" content="Portfolio of Luyanda Mqadi, a software engineer showcasing web development projects in e-commerce, education, and finance.">
+    <meta name="keywords" content="Luyanda Mqadi, software engineer, web developer, portfolio, front-end development">
+    <meta property="og:title" content="Luyanda Mqadi - Software Engineer Portfolio">
+    <meta property="og:description" content="Explore Luyanda Mqadi's web development projects in e-commerce, education, and finance.">
+    <meta property="og:type" content="website">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Roboto+Mono:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="StyleSheet.css">
+</head>
+<body class="dark-mode">
+ <div class="stars">
+        <div></div>
+        <div></div>
+    </div>
+    <header>
+<nav>
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="dark-mode-li"><button id="dark-mode-toggle">🌙 Dark Mode</button></li>
+    </ul>
+</nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <img src="Images/suit.jpeg" id="profile-image" alt="Luyanda Mqadi, Software Engineer, profile picture" loading="lazy">
+            <div class="text-overlay">
+                <p class="portfolio"><span id="typed-text">My Personal Portfolio</span><span class="cursor">|</span></p>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>Hello, I'm Luyanda Mqadi</h2>
+            <p class="job-title">Software Engineer</p>
+            <p class="description">I'm a passionate front-end developer with a knack for creating user-friendly web experiences. Proficient in HTML, CSS, and JavaScript, with certifications from Udemy and AWS, I aim to build interfaces that are both beautiful and functional.</p>
+        </section>
+
+        <section id="experience-education">
+            <div class="experience">
+                <i class="fas fa-briefcase"></i>
+                <h3>Experience</h3>
+                <ul class="info-list">
+                    <li>Entry-level Software Developer</li>
+                    <li>Computer Science Student Assistant</li>
+                </ul>
+            </div>
+            <div class="education">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Education</h3>
+                <ul class="info-list">
+                    <li>BSc Computer Science</li>
+                    <li>Udemy Python Certificate</li>
+                    <li>AWS DevOps Certificate</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <canvas id="skillsChart" width="400" height="400"></canvas>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="carousel">
+                <button class="carousel-btn prev" aria-label="Previous project">❮</button>
+                <div class="carousel-container">
+                    <div class="carousel-slide">
+                        <img src="Images/bridgeGap-image.jpg" alt="Bridge Gap Tutoring Website Screenshot" class="project-img" loading="lazy">
+                        <h3>Bridge Gap Tutoring Website</h3>
+                        <p>A tutoring platform designed to connect students and tutors through a clean, responsive interface. Includes registration, scheduling, and email notifications.</p>
+                        <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                        <ul class="project-links">
+                            <li><a href="https://github.com/4Luyanda/zuwakhe-tutoring" class="pro-link" target="_blank">GitHub</a></li>
+                            <li><a href="#" class="pro-link" onclick="alert('Demo coming soon!')">Live Demo</a></li>
+                        </ul>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="Images/E-commerce-web.jpg" alt="E-commerce Web Application Screenshot" class="project-img" loading="lazy">
+                        <h3>E-commerce Web Application</h3>
+                        <p>Responsive shopping platform featuring product browsing, secure checkout, and order management. Includes payment gateway and admin panel for business use.</p>
+                        <p><strong>Technologies:</strong> React, Node.js, MongoDB, Stripe</p>
+                        <ul class="project-links">
+                            <li><a href="https://github.com/4Luyanda/lvault" class="pro-link" target="_blank">GitHub</a></li suurce>
+                            <li><a href="#" class="pro-link" onclick="alert('Demo coming soon!')">Live Demo</a></li>
+                        </ul>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="Images/financial-web.jpg" alt="Financial Management Website Screenshot" class="project-img" loading="lazy">
+                        <h3>Financial Management Website</h3>
+                        <p>Web app for tracking personal expenses and income with real-time data storage and retrieval. Includes login, dashboards, and secure data storage.</p>
+                        <p><strong>Technologies:</strong> JavaScript, Firebase, HTML, CSS</p>
+                        <ul class="project-links">
+                            <li><a href="https://github.com/4Luyanda/financial-management" class="pro-link" target="_blank">GitHub</a></li>
+                            <li><a href="#" class="pro-link" onclick="alert('Demo coming soon!')">Live Demo</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="carousel-btn next" aria-label="Next project">❯</button>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: luyandoh6@gmail.com</p>
+            <form id="contact-form" method="post">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <ul class="footer-links">
+            <li><a href="https://example.com/luyanda-cv.pdf" id="cv-link" target="_blank">Download CV</a></li>
+            <li><a href="#contact" id="contact-info-link">Contact Info</a></li>
+        </ul>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/luyanda-mqadi-220ba423a/" target="_blank" aria-label="Luyanda Mqadi's LinkedIn Profile">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/4Luyanda" target="_blank" aria-label="Luyanda Mqadi's GitHub Profile">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </footer>
+ <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function() {
+    emailjs.init("bHOgX0Bk-w-SdfVfk"); // Replace with your User ID
+  })();
+</script>      <script src="JavaScript.js" defer></script>
+</body>
+</html>
